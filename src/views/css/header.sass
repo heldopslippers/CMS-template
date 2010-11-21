@@ -1,0 +1,48 @@
+/*-- header variables --*/
+$a: url('/images/top2.png')
+$header-width: 990px
+
+#header
+	width: 100%
+	height: 47px
+	background: #22A7F2
+	.center
+		position: relative
+		width: $header-width
+		height: 100%
+		margin: 0px auto
+		a.website
+			@include font
+			span.left
+				float: left
+				width: 10px
+				height: 28px
+				background: $a
+				margin-top: 10px
+			span.center
+				float: left
+				height: 28px
+				width: auto
+				background: url('/images/center.png')
+				margin-top: 10px
+			span.right
+				float: left
+				width: 11px
+				height: 28px
+				background: $a
+				background-position: 11px 0px
+				margin-top: 10px
+		a.logo
+			position: absolute
+			margin-top: 10px
+			left: $header-width/2 - 45
+			height: 29px
+			overflow: hidden
+		a.logo:hover img
+			margin-top: -29px
+		a.logout
+			position: absolute
+			margin-top: 10px
+			@include font
+			right: 0px
+			border-bottom: 1px dotted white
